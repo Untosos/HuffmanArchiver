@@ -1,0 +1,168 @@
+\doxysection{huffman.\+h File Reference}
+\hypertarget{huffman_8h}{}\label{huffman_8h}\index{huffman.h@{huffman.h}}
+
+
+Header file for the Huffman encoding algorithm.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}}
+\begin{DoxyCompactList}\small\item\em \doxylink{struct_node}{Node} of the Huffman tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{huffman_8h_ad6ced377a2960c5aa57819c575b5be07}{load\+Text\+From\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Loads text from a specified file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{huffman_8h_a7162bc9474ee74de31ac33bd6fb1fdbd}{build\+Huffman\+Tree}} (const std\+::string \&text, std\+::unordered\+\_\+map$<$ char, std\+::string $>$ \&huffman\+Code)
+\begin{DoxyCompactList}\small\item\em Builds the Huffman tree and generates character codes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huffman_8h_addd19496641f2d8b724638680d5e49c2}{write\+Encoded\+Message\+To\+File}} (const std\+::string \&encoded\+String, const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Writes the encoded message to a binary file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{huffman_8h_a951ea8b5d6d814237100b828768c98fd}{read\+Encoded\+Message\+From\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Reads an encoded message from a binary file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huffman_8h_ad835573ce3d550f2d4a185bbce8425d7}{decode\+Message\+From\+File}} (const std\+::string \&input\+Filename, const std\+::string \&output\+Filename, \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}root)
+\begin{DoxyCompactList}\small\item\em Decodes a message from a binary file and writes the result to a text file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huffman_8h_a3144b5dde658edf9402dca860217c27f}{Compression\+Ratio}} (const std\+::string \&input\+File, const std\+::string \&encoded\+File)
+\begin{DoxyCompactList}\small\item\em Calculates the compression ratio based on the sizes of the input and encoded files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{huffman_8h_a07ac2c9c3e9dd74f04ad78f6f7cce0ef}{Text\+Compression\+Ratio}} (const std\+::string \&original\+Text, const std\+::unordered\+\_\+map$<$ char, std\+::string $>$ \&huffman\+Code)
+\begin{DoxyCompactList}\small\item\em Calculates the compression ratio based on the original text and Huffman code table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the Huffman encoding algorithm. 
+
+Contains data structures and functions for text compression using the Huffman algorithm, including tree construction, encoding and decoding messages, and calculating compression ratios. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{huffman_8h_a7162bc9474ee74de31ac33bd6fb1fdbd}\index{huffman.h@{huffman.h}!buildHuffmanTree@{buildHuffmanTree}}
+\index{buildHuffmanTree@{buildHuffmanTree}!huffman.h@{huffman.h}}
+\doxysubsubsection{\texorpdfstring{buildHuffmanTree()}{buildHuffmanTree()}}
+{\footnotesize\ttfamily \label{huffman_8h_a7162bc9474ee74de31ac33bd6fb1fdbd} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} build\+Huffman\+Tree (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text}{, }\item[{std\+::unordered\+\_\+map$<$ char, std\+::string $>$ \&}]{huffman\+Code}{}\end{DoxyParamCaption})}
+
+
+
+Builds the Huffman tree and generates character codes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Input text to encode. \\
+\hline
+{\em huffman\+Code} & Reference to a map for storing character codes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the root of the Huffman tree. 
+\end{DoxyReturn}
+\Hypertarget{huffman_8h_a3144b5dde658edf9402dca860217c27f}\index{huffman.h@{huffman.h}!CompressionRatio@{CompressionRatio}}
+\index{CompressionRatio@{CompressionRatio}!huffman.h@{huffman.h}}
+\doxysubsubsection{\texorpdfstring{CompressionRatio()}{CompressionRatio()}}
+{\footnotesize\ttfamily \label{huffman_8h_a3144b5dde658edf9402dca860217c27f} 
+void Compression\+Ratio (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input\+File}{, }\item[{const std\+::string \&}]{encoded\+File}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the compression ratio based on the sizes of the input and encoded files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+File} & Name of the input file with the original text. \\
+\hline
+{\em encoded\+File} & Name of the file with the encoded text. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{huffman_8h_ad835573ce3d550f2d4a185bbce8425d7}\index{huffman.h@{huffman.h}!decodeMessageFromFile@{decodeMessageFromFile}}
+\index{decodeMessageFromFile@{decodeMessageFromFile}!huffman.h@{huffman.h}}
+\doxysubsubsection{\texorpdfstring{decodeMessageFromFile()}{decodeMessageFromFile()}}
+{\footnotesize\ttfamily \label{huffman_8h_ad835573ce3d550f2d4a185bbce8425d7} 
+void decode\+Message\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input\+Filename}{, }\item[{const std\+::string \&}]{output\+Filename}{, }\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{root}{}\end{DoxyParamCaption})}
+
+
+
+Decodes a message from a binary file and writes the result to a text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Filename} & Name of the file containing the encoded message. \\
+\hline
+{\em output\+Filename} & Name of the output file for the decoded text. \\
+\hline
+{\em root} & Pointer to the root of the Huffman tree. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{huffman_8h_ad6ced377a2960c5aa57819c575b5be07}\index{huffman.h@{huffman.h}!loadTextFromFile@{loadTextFromFile}}
+\index{loadTextFromFile@{loadTextFromFile}!huffman.h@{huffman.h}}
+\doxysubsubsection{\texorpdfstring{loadTextFromFile()}{loadTextFromFile()}}
+{\footnotesize\ttfamily \label{huffman_8h_ad6ced377a2960c5aa57819c575b5be07} 
+std\+::string load\+Text\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Loads text from a specified file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the input file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Contents of the file as a string. 
+\end{DoxyReturn}
+\Hypertarget{huffman_8h_a951ea8b5d6d814237100b828768c98fd}\index{huffman.h@{huffman.h}!readEncodedMessageFromFile@{readEncodedMessageFromFile}}
+\index{readEncodedMessageFromFile@{readEncodedMessageFromFile}!huffman.h@{huffman.h}}
+\doxysubsubsection{\texorpdfstring{readEncodedMessageFromFile()}{readEncodedMessageFromFile()}}
+{\footnotesize\ttfamily \label{huffman_8h_a951ea8b5d6d814237100b828768c98fd} 
+std\+::string read\+Encoded\+Message\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Reads an encoded message from a binary file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the input file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The encoded string read from the file. 
+\end{DoxyReturn}
+\Hypertarget{huffman_8h_a07ac2c9c3e9dd74f04ad78f6f7cce0ef}\index{huffman.h@{huffman.h}!TextCompressionRatio@{TextCompressionRatio}}
+\index{TextCompressionRatio@{TextCompressionRatio}!huffman.h@{huffman.h}}
+\doxysubsubsection{\texorpdfstring{TextCompressionRatio()}{TextCompressionRatio()}}
+{\footnotesize\ttfamily \label{huffman_8h_a07ac2c9c3e9dd74f04ad78f6f7cce0ef} 
+void Text\+Compression\+Ratio (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{original\+Text}{, }\item[{const std\+::unordered\+\_\+map$<$ char, std\+::string $>$ \&}]{huffman\+Code}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the compression ratio based on the original text and Huffman code table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original\+Text} & The original text. \\
+\hline
+{\em huffman\+Code} & Map with character codes. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{huffman_8h_addd19496641f2d8b724638680d5e49c2}\index{huffman.h@{huffman.h}!writeEncodedMessageToFile@{writeEncodedMessageToFile}}
+\index{writeEncodedMessageToFile@{writeEncodedMessageToFile}!huffman.h@{huffman.h}}
+\doxysubsubsection{\texorpdfstring{writeEncodedMessageToFile()}{writeEncodedMessageToFile()}}
+{\footnotesize\ttfamily \label{huffman_8h_addd19496641f2d8b724638680d5e49c2} 
+void write\+Encoded\+Message\+To\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{encoded\+String}{, }\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Writes the encoded message to a binary file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encoded\+String} & The encoded string. \\
+\hline
+{\em filename} & Name of the output file. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5FEAEF-D082-4829-8FA7-E682C825C717}|test.vcxproj|G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E5FEAEF-D082-4829-8FA7-E682C825C717}|test.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5FEAEF-D082-4829-8FA7-E682C825C717}|test.vcxproj|G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\huffman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E5FEAEF-D082-4829-8FA7-E682C825C717}|test.vcxproj|solutionrelative:huffman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5FEAEF-D082-4829-8FA7-E682C825C717}|test.vcxproj|G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\huffman.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E5FEAEF-D082-4829-8FA7-E682C825C717}|test.vcxproj|solutionrelative:huffman.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman\u0410rchiver\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "input.txt",
+              "DocumentMoniker": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman\u0410rchiver\\input.txt",
+              "RelativeDocumentMoniker": "..\\..\\Huffman\u0410rchiver\\input.txt",
+              "ToolTip": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman\u0410rchiver\\input.txt",
+              "RelativeToolTip": "..\\..\\Huffman\u0410rchiver\\input.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-04T19:33:12.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "huffman.h",
+              "DocumentMoniker": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\huffman.h",
+              "RelativeDocumentMoniker": "huffman.h",
+              "ToolTip": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\huffman.h",
+              "RelativeToolTip": "huffman.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-04T19:33:12.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\main.cpp*",
+              "RelativeToolTip": "main.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-04T19:33:13.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "huffman.cpp",
+              "DocumentMoniker": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\huffman.cpp",
+              "RelativeDocumentMoniker": "huffman.cpp",
+              "ToolTip": "G:\\\u0432\u0430\u0436\u043D\u043E\u0435\\Huffman-Archiver\\HuffmanArchiver-1\\huffman.cpp",
+              "RelativeToolTip": "huffman.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-04T19:33:13.452Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+\doxysection{huffman.\+cpp File Reference}
+\hypertarget{huffman_8cpp}{}\label{huffman_8cpp}\index{huffman.cpp@{huffman.cpp}}
+{\ttfamily \#include "{}huffman.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcomp}{comp}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{huffman_8cpp_abdb6fdffd522149eb8bbdbb9d89b0dc3}{get\+Node}} (char ch, int freq, \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}left, \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}right)
+\item 
+void \mbox{\hyperlink{huffman_8cpp_ae606d9bfa95e3b09c40e0acd0f80cca6}{encode}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}root, string str, unordered\+\_\+map$<$ char, string $>$ \&huffman\+Code)
+\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{huffman_8cpp_a39b345a7d3c050e4377c10eacfeaf11d}{build\+Huffman\+Tree}} (const string \&text, unordered\+\_\+map$<$ char, string $>$ \&huffman\+Code)
+\item 
+void \mbox{\hyperlink{huffman_8cpp_ab939a0f806d3e76136bd27d0dd29d153}{write\+Encoded\+Message\+To\+File}} (const string \&encoded\+String, const string \&filename)
+\item 
+string \mbox{\hyperlink{huffman_8cpp_abd08a0a0018534d6a3290100870228a8}{read\+Encoded\+Message\+From\+File}} (const string \&filename)
+\item 
+void \mbox{\hyperlink{huffman_8cpp_acaa7afca1b8e112b7e1ade045285b9f9}{decode}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}root, int \&index, const string \&str, string \&decoded\+String)
+\item 
+void \mbox{\hyperlink{huffman_8cpp_a210e489871ae12d56568efcb5110d82a}{decode\+Message\+From\+File}} (const string \&input\+Filename, const string \&output\+Filename, \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}root)
+\item 
+string \mbox{\hyperlink{huffman_8cpp_ad1fcdb19243b7600b97c997bd2c35fba}{load\+Text\+From\+File}} (const string \&filename)
+\item 
+void \mbox{\hyperlink{huffman_8cpp_a445fb70aaca7554fd9878113b0c0e1e7}{Compression\+Ratio}} (const string \&input\+File, const string \&encoded\+File)
+\item 
+void \mbox{\hyperlink{huffman_8cpp_a651f9008fea753524998616d7e99a844}{Text\+Compression\+Ratio}} (const string \&original\+Text, const unordered\+\_\+map$<$ char, string $>$ \&huffman\+Code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{huffman_8cpp_a39b345a7d3c050e4377c10eacfeaf11d}\index{huffman.cpp@{huffman.cpp}!buildHuffmanTree@{buildHuffmanTree}}
+\index{buildHuffmanTree@{buildHuffmanTree}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{buildHuffmanTree()}{buildHuffmanTree()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_a39b345a7d3c050e4377c10eacfeaf11d} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} build\+Huffman\+Tree (\begin{DoxyParamCaption}\item[{const string \&}]{text}{, }\item[{unordered\+\_\+map$<$ char, string $>$ \&}]{huffman\+Code}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_a445fb70aaca7554fd9878113b0c0e1e7}\index{huffman.cpp@{huffman.cpp}!CompressionRatio@{CompressionRatio}}
+\index{CompressionRatio@{CompressionRatio}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{CompressionRatio()}{CompressionRatio()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_a445fb70aaca7554fd9878113b0c0e1e7} 
+void Compression\+Ratio (\begin{DoxyParamCaption}\item[{const string \&}]{input\+File}{, }\item[{const string \&}]{encoded\+File}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_acaa7afca1b8e112b7e1ade045285b9f9}\index{huffman.cpp@{huffman.cpp}!decode@{decode}}
+\index{decode@{decode}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_acaa7afca1b8e112b7e1ade045285b9f9} 
+void decode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{root}{, }\item[{int \&}]{index}{, }\item[{const string \&}]{str}{, }\item[{string \&}]{decoded\+String}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_a210e489871ae12d56568efcb5110d82a}\index{huffman.cpp@{huffman.cpp}!decodeMessageFromFile@{decodeMessageFromFile}}
+\index{decodeMessageFromFile@{decodeMessageFromFile}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{decodeMessageFromFile()}{decodeMessageFromFile()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_a210e489871ae12d56568efcb5110d82a} 
+void decode\+Message\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{input\+Filename}{, }\item[{const string \&}]{output\+Filename}{, }\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{root}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_ae606d9bfa95e3b09c40e0acd0f80cca6}\index{huffman.cpp@{huffman.cpp}!encode@{encode}}
+\index{encode@{encode}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_ae606d9bfa95e3b09c40e0acd0f80cca6} 
+void encode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{root}{, }\item[{string}]{str}{, }\item[{unordered\+\_\+map$<$ char, string $>$ \&}]{huffman\+Code}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_abdb6fdffd522149eb8bbdbb9d89b0dc3}\index{huffman.cpp@{huffman.cpp}!getNode@{getNode}}
+\index{getNode@{getNode}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_abdb6fdffd522149eb8bbdbb9d89b0dc3} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} get\+Node (\begin{DoxyParamCaption}\item[{char}]{ch}{, }\item[{int}]{freq}{, }\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{left}{, }\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{right}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_ad1fcdb19243b7600b97c997bd2c35fba}\index{huffman.cpp@{huffman.cpp}!loadTextFromFile@{loadTextFromFile}}
+\index{loadTextFromFile@{loadTextFromFile}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{loadTextFromFile()}{loadTextFromFile()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_ad1fcdb19243b7600b97c997bd2c35fba} 
+string load\+Text\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_abd08a0a0018534d6a3290100870228a8}\index{huffman.cpp@{huffman.cpp}!readEncodedMessageFromFile@{readEncodedMessageFromFile}}
+\index{readEncodedMessageFromFile@{readEncodedMessageFromFile}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{readEncodedMessageFromFile()}{readEncodedMessageFromFile()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_abd08a0a0018534d6a3290100870228a8} 
+string read\+Encoded\+Message\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_a651f9008fea753524998616d7e99a844}\index{huffman.cpp@{huffman.cpp}!TextCompressionRatio@{TextCompressionRatio}}
+\index{TextCompressionRatio@{TextCompressionRatio}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{TextCompressionRatio()}{TextCompressionRatio()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_a651f9008fea753524998616d7e99a844} 
+void Text\+Compression\+Ratio (\begin{DoxyParamCaption}\item[{const string \&}]{original\+Text}{, }\item[{const unordered\+\_\+map$<$ char, string $>$ \&}]{huffman\+Code}{}\end{DoxyParamCaption})}
+
+\Hypertarget{huffman_8cpp_ab939a0f806d3e76136bd27d0dd29d153}\index{huffman.cpp@{huffman.cpp}!writeEncodedMessageToFile@{writeEncodedMessageToFile}}
+\index{writeEncodedMessageToFile@{writeEncodedMessageToFile}!huffman.cpp@{huffman.cpp}}
+\doxysubsubsection{\texorpdfstring{writeEncodedMessageToFile()}{writeEncodedMessageToFile()}}
+{\footnotesize\ttfamily \label{huffman_8cpp_ab939a0f806d3e76136bd27d0dd29d153} 
+void write\+Encoded\+Message\+To\+File (\begin{DoxyParamCaption}\item[{const string \&}]{encoded\+String}{, }\item[{const string \&}]{filename}{}\end{DoxyParamCaption})}
+

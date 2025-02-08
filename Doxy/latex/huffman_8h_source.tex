@@ -1,0 +1,38 @@
+\doxysection{huffman.\+h}
+\hypertarget{huffman_8h_source}{}\label{huffman_8h_source}\mbox{\hyperlink{huffman_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ HUFFMAN\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ HUFFMAN\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_node}{Node}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_node_a60b3924d995a47df096d90f9a926d7ba}{ch}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_node_a93e1b0f2d619b5ce1b19d982e967e579}{freq}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_node}{Node}}*\ \mbox{\hyperlink{struct_node_ab8c667ac8fdb120ed4c031682a9cdaee}{left}};\ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{struct_node}{Node}}*\ \mbox{\hyperlink{struct_node_a7328862eaa6dea28018326549b3294d3}{right}};\ \ \ \ \ }
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00037\ std::string\ \mbox{\hyperlink{huffman_8h_ad6ced377a2960c5aa57819c575b5be07}{loadTextFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00046\ \mbox{\hyperlink{struct_node}{Node}}*\ \mbox{\hyperlink{huffman_8h_a7162bc9474ee74de31ac33bd6fb1fdbd}{buildHuffmanTree}}(\textcolor{keyword}{const}\ std::string\&\ text,\ std::unordered\_map<char,\ std::string>\&\ huffmanCode);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{huffman_8h_addd19496641f2d8b724638680d5e49c2}{writeEncodedMessageToFile}}(\textcolor{keyword}{const}\ std::string\&\ encodedString,\ \textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00062\ std::string\ \mbox{\hyperlink{huffman_8h_a951ea8b5d6d814237100b828768c98fd}{readEncodedMessageFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{huffman_8h_ad835573ce3d550f2d4a185bbce8425d7}{decodeMessageFromFile}}(\textcolor{keyword}{const}\ std::string\&\ inputFilename,\ \textcolor{keyword}{const}\ std::string\&\ outputFilename,\ \mbox{\hyperlink{struct_node}{Node}}*\ root);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{huffman_8h_a3144b5dde658edf9402dca860217c27f}{CompressionRatio}}(\textcolor{keyword}{const}\ std::string\&\ inputFile,\ \textcolor{keyword}{const}\ std::string\&\ encodedFile);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00087\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{huffman_8h_a07ac2c9c3e9dd74f04ad78f6f7cce0ef}{TextCompressionRatio}}(\textcolor{keyword}{const}\ std::string\&\ originalText,\ \textcolor{keyword}{const}\ std::unordered\_map<char,\ std::string>\&\ huffmanCode);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
